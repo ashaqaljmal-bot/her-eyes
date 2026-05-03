@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Her Eyes - صفحة هبوط</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #050816;
+        color: #eef2ff;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top, #2b2f6b 0%, #050816 45%, #03040c 100%); }
+      .page { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+      header { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+      .brand { font-size: 1.5rem; font-weight: 700; letter-spacing: 0.08em; }
+      .brand span { color: #7dd3fc; }
+      nav a { margin-left: 22px; color: #dbeafe; text-decoration: none; font-weight: 500; }
+      nav a:hover { color: #7dd3fc; }
+
+      .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); gap: 40px; align-items: center; margin-top: 60px; }
+      .hero-text h1 { font-size: clamp(2.75rem, 4vw, 4rem); margin: 0; line-height: 1.02; }
+      .hero-text p { margin: 22px 0 0; max-width: 620px; line-height: 1.8; color: #cbd5e1; font-size: 1.05rem; }
+      .hero-text .actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 16px; }
+      .hero-text .btn-primary, .hero-text .btn-secondary { border: none; border-radius: 14px; padding: 16px 26px; font-size: 1rem; cursor: pointer; font-weight: 600; }
+      .btn-primary { background: #38bdf8; color: #021024; }
+      .btn-secondary { background: rgba(148, 163, 184, 0.14); color: #e2e8f0; }
+
+      .hero-card { background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 30px; padding: 30px; box-shadow: 0 30px 80px rgba(5, 8, 22, 0.35); }
+      .hero-card h2 { margin-top: 0; font-size: 1.55rem; }
+      .hero-card p { color: #cbd5e1; line-height: 1.75; margin: 18px 0 0; }
+      .stat-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+      .stat { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 18px 20px; border-radius: 18px; }
+      .stat strong { display: block; font-size: 1.5rem; color: #7dd3fc; }
+      .stat span { display: block; margin-top: 6px; color: #cbd5e1; }
+
+      .features { margin-top: 70px; display: grid; gap: 18px; }
+      .feature { display: grid; grid-template-columns: auto 1fr; gap: 18px; background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 24px; align-items: center; }
+      .feature-icon { width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: rgba(56, 189, 248, 0.12); color: #38bdf8; font-size: 1.4rem; }
+      .feature h3 { margin: 0 0 6px; font-size: 1.15rem; }
+      .feature p { margin: 0; color: #cbd5e1; line-height: 1.7; }
+
+      .footer { margin-top: 72px; padding: 30px 28px; border-radius: 24px; background: rgba(15, 23, 42, 0.75); display: grid; gap: 18px; }
+      .footer h3 { margin: 0; font-size: 1.3rem; }
+      .footer p { margin: 0; color: #cbd5e1; line-height: 1.75; }
+      .footer small { color: #94a3b8; }
+
+      .hero-image { border-radius: 28px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.08); }
+      .hero-image img { width: 100%; display: block; }
+
+      @media (max-width: 860px) {
+        .hero { grid-template-columns: 1fr; }
+        nav { width: 100%; order: 3; }
+      }
+
+      @media (max-width: 620px) {
+        .page { padding: 20px 16px; }
+        .hero-text h1 { font-size: 2.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="brand">Her <span>Eyes</span></div>
+        <nav>
+          <a href="#features">مميزات</a>
+          <a href="#how">كيف يعمل</a>
+          <a href="#start">ابدأ الآن</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-text">
+          <p style="color:#7dd3fc;font-weight:700;letter-spacing:0.14em;margin-bottom:18px;">صفحة هبوط ذكية لتطبيق تواصل مع Claude</p>
+          <h1>بناء تجربة دردشة آمنة وسريعة على Vercel مع Claude</h1>
+          <p>Her Eyes هو مشروع جاهز للنشر على Vercel، يجمع بين واجهة عربية نظيفة وAPI آمن خلفي للتواصل مع Claude عبر Anthropic.</p>
+          <div class="actions">
+            <button class="btn-primary" onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'});">ابدأ الآن</button>
+            <button class="btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'});">شاهد المميزات</button>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>ما الذي ستحصل عليه؟</h2>
+          <p>تصميم صفحة هبوط متجاوبة، تكامل مع Vercel، ومسار نشر جاهز يعمل مع مفتاح Anthropic بأمان.</p>
+          <div class="stat-grid">
+            <div class="stat"><strong>3 ملفات</strong><span>خلال مشروع بسيط ومباشر</span></div>
+            <div class="stat"><strong>Vercel-ready</strong><span>نشر سريع بملف إعدادات واحد</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <div>
+            <h3>أداء فوري</h3>
+            <p>تحميل سريع وتجربة مستخدم سريعة بفضل النشر على Vercel والواجهة الثابتة المصغّرة.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <div>
+            <h3>أمان API</h3>
+            <p>الطلب يُرسل إلى API خارجية عبر endpoint خاص، مما يحفظ مفتاح Anthropic بعيداً عن الواجهة.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🌐</div>
+          <div>
+            <h3>واجهة عربية متكاملة</h3>
+            <p>تصميم RTL جاهز ودعم نص عربي واضح، مناسب للزوار من الشرق الأوسط وشمال أفريقيا.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🚀</div>
+          <div>
+            <h3>نشر سريع</h3>
+            <p>يعمل مباشرة بعد رفع المشروع إلى GitHub وربطه بـ Vercel.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="footer">
+        <h3>كيف يعمل المشروع؟</h3>
+        <p>الواجهة الأمامية في `public/index.html` تسمح للمستخدم بإرسال رسالة. الطلب يمر عبر `api/chat.js` الذي يتصل بـ Claude بواسطة `ANTHROPIC_API_KEY` الموجود في إعدادات Vercel.</p>
+        <small>النشر يعتمد على `vercel.json` لتحديد بناء `@vercel/node` للـ API و`@vercel/static` للصفحة الثابتة.</small>
+      </section>
+
+      <section id="start" class="footer">
+        <h3>جاهز للانطلاق؟</h3>
+        <p>انسخ المشروع إلى GitHub، اربطه بـ Vercel، ثم أضف متغير البيئة `ANTHROPIC_API_KEY`. بعد ذلك سيتم تشغيل الصفحة مباشرةً.</p>
+        <small>يمكنك تعديل النصوص والعناوين بسرعة لتخصيص الصفحة لأي منتج أو تطبيق AI.</small>
+      </section>
+    </div>
+  </body>
+</html>
